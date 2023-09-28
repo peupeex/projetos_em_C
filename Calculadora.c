@@ -3,19 +3,29 @@
 
 int main()
 {
-    float a;
-    float b;
-    float resultado;
     int escolha;
 
-    printf("escolha uma operacao:\n");
-    printf("[ 1 ] Soma\n");
-    printf("[ 2 ] subtracao\n");
-    printf("[ 3 ] multiplicacao\n");
-    printf("[ 4 ] divisao\n");
-    printf("[ 5 ] potenciacao\n");
-    printf("[ 6 ] radiciacao\n");
-    scanf("%d", &escolha);
+    while (1) 
+    {
+        float a, b, resultado;
+
+        printf(" \n");
+        printf("Escolha uma operacao:\n");
+        printf("[ 1 ] Soma\n");
+        printf("[ 2 ] Subtracao\n");
+        printf("[ 3 ] Multiplicacao\n");
+        printf("[ 4 ] Divisao\n");
+        printf("[ 5 ] Potenciacao\n");
+        printf("[ 6 ] Radiciacao\n");
+        printf("[ 7 ] Logaritimo (base 10)\n");
+        printf("[ 0 ] Sair\n");
+        scanf("%d", &escolha);
+
+        if (escolha == 0)
+        {
+            printf("Saindo do programa.\n");
+            break; 
+        }
 
     switch (escolha)
     {
@@ -107,4 +117,5 @@ int main()
         return 0;
         break;
     }
+}
 }
